@@ -8,7 +8,15 @@ public class Device {
     private String model;
     private String operatingSystem;
     private String serialNumber;
-    private String Status;
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public Device() {
     }
@@ -67,13 +75,5 @@ public class Device {
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
-    }
-
-    public String getStatus() {
-        return Status;
-    }
-
-    public void setStatus(String status) {
-        Status = status;
     }
 }
